@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Cryptonite</title>
+  <!-- bootstrap -->
+  <!-- CSS only -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+    integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+  <!-- jQuery -->
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js"
+    integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous" defer></script>
+
+  <!-- JS -->
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+    integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"
+    defer></script>
+
+  <!-- MINE -->
+  <!-- css -->
+  <link href="styles.css" rel="stylesheet" ref="text/css">
+
+  <!-- js -->
+  <script src="main.js" defer></script>
+</head>
+
+<body>
+  <!-- navbar -->
+  <div class="fixed">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav md-auto mx-auto">
+          <li class="nav-item active">
+            <a class="nav-link" id="home" href="#">Home <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" id="aboutMe" href="#">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" id="liveReports" href="#">Live reports</a>
+          </li>
+        </ul>
+        <div class="form-inline my-2 my-lg-0">
+          <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search" id="searchCoinInput">
+          <button class="btn btn-outline-success my-2 my-sm-0" type="submit" id="searchCoinBTN">Search</button>
+        </div>
+      </div>
+    </nav>
+  </div>
+
+  <div id="container">
+    <!-- header -->
+    <div class="header">
+      <img src="image/cryptonite-logo.png" alt="cryptonite-logo" />
+    </div>
+    <div class="coinsBG">
+      <!-- coin board -->
+      <div id="coinBoard">
+        <img src="./image/preloader.gif" class="preloader" />
+      </div>
+
+      <div id="liveReportsPage">
+        <div id="chartContainer" style="height: 300px; width: 100%;"></div>
+      </div>
+    </div>
+    
+    <div id="aboutMePage">
+      <div class="halfPage dark">
+        <div class="halfPageText">
+          <h1 style="font-size: 100px">This is<br>M<span style="font-size: 50px;">or </span>E<span style="font-size: 50px;">zra</span></h1>
+          <p>My name is Mor, I am 28 years old and I live in Kfar Malal.<br>
+          I love the environment in the Moshav, though I don't have time to fully enjoy it because I have to deal with coins in my free time.</p>
+          <p>Once, when I had life, my hobbies (which are now my dreams) were surfing, reading, drawing, practicing yoga and more...</p>
+          <p>one more thing:<br><b>אני לא מתלוננת, אני מוציאה קיטור. זה בריא</b></p>
+          <p>and one LAST thing - I beat it in 700 code lines! babam!</p>
+        </div>
+      </div>
+
+      <div class="halfPage image">
+        <img src="./image/about-me.png" alt="my pictures">
+      </div>
+    </div>
+  </div>
+
+  <!-- canvas js -->
+  <script src="https://canvasjs.com/assets/script/jquery.canvasjs.min.js" defer></script>
+</body>
+
+</html>
